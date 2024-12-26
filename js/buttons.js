@@ -1,5 +1,5 @@
 function update_buttons(lang="en"){
-    $.getJSON("buttons.json", function(json) {
+    $.getJSON("js/buttons.json", function(json) {
         let button_lines = ''
         json['buttons'].forEach((line) => {
             let buttons = ''
@@ -9,6 +9,17 @@ function update_buttons(lang="en"){
             button_lines += get_line(buttons)
         })
         document.getElementById('buttons').innerHTML = button_lines
+    })
+}
+
+function update_name(lang="en"){
+    $.getJSON("js/buttons.json", function(json) {
+        if (lang == "en"){
+            document.getElementById('name').innerHTML = json['full_name_en']
+        }
+        else {
+            document.getElementById('name').innerHTML = json['full_name_ru']
+        }
     })
 }
 
