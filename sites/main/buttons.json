@@ -1,0 +1,47 @@
+{
+    "full_name_ru": "Андрей Маракулин",
+    "full_name_en": "Andrey Marakulin",
+    "bio_ru": "Python-разработчик, Data scientist, немного DevOps",
+    "bio_en": "",
+    "buttons": [
+        [
+            {
+                "text_ru": "Резюме",
+                "text_en": "Resume",
+                "href_ru": "https://cv.annndruha.space",
+                "href_en": "https://cv.annndruha.space/?lang=en",
+                "icon": "icons/cv.svg"
+            },
+            {
+                "text_ru": "Заметки",
+                "text_en": "Notes",
+                "href_ru": "https://notes.annndruha.space",
+                "href_en": "https://notes.annndruha.space",
+                "icon": "icons/books.svg"
+            },
+            {
+                "text_ru": "GitHub",
+                "text_en": "GitHub",
+                "href_ru": "https://github.com/annndruha",
+                "href_en": "https://github.com/annndruha",
+                "icon": "icons/github.svg"
+            }
+        ],
+        [
+            {
+                "text_ru": "Почта",
+                "text_en": "Mail",
+                "href_ru": "mailto:annndruha.github@gmail.com",
+                "href_en": "mailto:annndruha.github@gmail.com",
+                "icon": "icons/mail.svg"
+            },
+            {
+                "text_ru": "Telegram",
+                "text_en": "Telegram",
+                "href_ru": "https://t.me/annndruha",
+                "href_en": "https://t.me/annndruha",
+                "icon": "icons/telegram.svg"
+            }
+        ]
+    ]
+}

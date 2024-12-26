@@ -1,0 +1,26 @@
+{
+    "buttons": [
+        [
+            {
+                "text_en": "Home",
+                "href_en": "https://home.annndruha.space",
+                "icon": "icons/home.png"
+            },
+            {
+                "text_en": "Campus",
+                "href_en": "https://campus.annndruha.space",
+                "icon": "icons/campus.svg"
+            },
+            {
+                "text_en": "Assistant",
+                "href_en": "https://assistant.annndruha.space",
+                "icon": "icons/assistant.svg"
+            },
+            {
+                "text_en": "VPN",
+                "href_en": "https://vpn.annndruha.space",
+                "icon": "icons/vpn.ico"
+            }
+        ]
+    ]
+}
