@@ -1,219 +1,195 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex,nofollow" />
+        <title>VPN Info</title>
+        <link rel="icon" href="/icons/vpn.svg" />
+        <link rel="shortcut icon" href="/icons/vpn.svg" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex,nofollow" />
-    <title>VPN Info</title>
-    <link rel="icon" href="/icons/vpn.svg">
-    <link rel="shortcut icon" href="/icons/vpn.svg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-</head>
-
-<body>
-    <nav id="navbar" class="navbar navbar-light bg-light sticky-top px-3 mb-3" style="margin-bottom: 0">
-        <a class="navbar-brand" href="#">
-            <img src="/icons/vpn.svg" width="40" height="40" alt="" style="padding-right: 1px; padding-bottom: 3px;">
-            vpn.annndruha.space</a>
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link text-success" href="#general">Главное</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-success" href="#amneziavpn">AmneziaVPN</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-success" href="#outline">Outline</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-success" href="#wireguard">Wireguard</a>
-            </li>
-        </ul>
-    </nav>
-    <div tabindex="0" class="p-5 rounded-3" style="margin-top: -20px;">
-        <h2 class="text-center" id="general">Главное</h2>
-        Вы попали на страницу инструкций по установке и настройке VPN для своих от annndruha. Чтобы быть в курсе
-        обновлений,
-        блокировок и проблем с сервером советую подписаться на
-        <a class="text-primary" href="https://t.me/+IRNskhOlrtsyNDIy" target="_blank">мой Telegram-канал</a>.
-        (Только критически важная информация по VPN, без спама).
-        <br>
-        <br>
-        <div class="alert alert-danger" role="alert">
-            1. Настойчиво прошу всех пользователей отключать VPN, если в нём отсутствует необходимость. Используйте
-            только
-            для сайтов, которые не открываются без VPN.
-            <br> 2. Постарайтесь не использовать VPN для скачивания торрентов и другой нелегальной деятельности, иначе
-            Нидерланды могут заблокировать сервер.
-        </div>
-        <br>
-        <h2 class="text-center" id="amneziavpn">AmneziaVPN<span
-                class="text-success">(Работает)</span></h2>
-        <br>
-        AmneziaVPN - OpenSource приложение от российских разработчиков. Оно поддерживает сразу много протоколов
-        на выбор, почти все имеют обфускацию против блокировок.
-        <ul>
-            <li>
-                Протокол AmneziaWG - обфусцированный Wireguard <code>(Протокол блочат с мобильных операторов)</code>
-            </li>
-            <li>
-                Протокол XRay - пока работает
-            </li>
-        </ul>
-        <p>
-        <p>
-            <b>Настройка</b>
-        <p>
-            1. Скачайте и установите на устройство приложение:
-        <ul>
-            <li>Клиент для <a class="text-success"
-                    href="https://github.com/amnezia-vpn/amnezia-client/releases/download/4.6.0.3/AmneziaVPN_4.6.0.3_x64.exe"
-                    target="_blank">Windows</a></li>
-            <li>Клиент для <a class="text-success"
-                    href="https://github.com/amnezia-vpn/amnezia-client/releases/download/4.6.0.3/AmneziaVPN_4.6.0.3.dmg"
-                    target="_blank">macOS</a></li>
-            <li>Клиент для <a class="text-success"
-                    href="https://github.com/amnezia-vpn/amnezia-client/releases/download/4.6.0.3/AmneziaVPN_Linux_4.6.0.3.tar.zip"
-                    target="_blank">Linux</a></li>
-            <li>Клиент для <a class="text-success" href="https://play.google.com/store/apps/details?id=org.amnezia.vpn"
-                    target="_blank">Android</a></li>
-            <li>Клиент для <a class="text-success" href="https://apps.apple.com/us/app/amneziavpn/id1600529900"
-                    target="_blank">iOS</a></li>
-        </ul>
-        <p>
-            2. Получите ключ доступа или файл с ключом доступа annndruha, а затем сохраните его на нужное устройство.
-        <p>
-            3. Откройте приложение AmneziaVPN
-        <ul>
-            <li>Нажмите "+", затем "Добавить новое соединение". Выберите либо файл-ключ.</li>
-            <li>Если Вам нужен VPN только для пары приложений, то ПОЖАЛУЙСТА, включите "Раздельное
-                VPN-туннелирование" и разрешите только определённым приложениям подключаться через VPN. Это снизит
-                нагрузку на сервер и позволит Вам не отключать VPN.</li>
-        </ul>
-        <p>
-            <br>
-        <h2 class="text-center" id="outline">Outline <span class="text-warning">(Частично заблокирован)</span></h2>
-        <br>
-        Outline - Open-source приложение от дочки гугла основанное на протоколе ShadowSocks.
-        <p>
-            Протокол устойчив к глубоким блокировкам, но ценой этому является более низкая скорость по сравнению с
-            Wireguard.
-        <p>
-            <b>Настройка</b>
-        <p>
-            1. Скачайте и установите на устройство приложение:
-        <ul>
-            <li>Outline: <a class="text-success"
-                    href="https://s3.amazonaws.com/outline-releases/client/windows/stable/Outline-Client.exe"
-                    target="_blank">Windows</a>
-                <a class="text-success" href="https://play.google.com/store/apps/details?id=org.outline.android.client"
-                    target="_blank">Android</a>
-                <a class="text-success" href="https://itunes.apple.com/app/outline-app/id1356177741"
-                    target="_blank">iOS</a>
-                <a class="text-success" href="https://itunes.apple.com/app/outline-app/id1356178125"
-                    target="_blank">macOS</a>
-                <a class="text-success"
-                    href="https://s3.amazonaws.com/outline-releases/client/linux/stable/Outline-Client.AppImage"
-                    target="_blank">Linux</a>
-            </li>
-            <li>
-                Shadowsocks: <a class="text-success" href="https://shadowsocks5.github.io/en/download/clients.html"
-                    target="_blank">альтернативные клиентские приложения</a></li>
-
-        </ul>
-        <p>
-            2. Получите ключ доступа у annndruha, который начинается с <code>ss://</code>, а затем скопируйте его.
-        <p>
-            3. Откройте клиент Outline или Shadowsocks.
-        <ul>
-            <li>Outline: Если ваш ключ доступа определился автоматически, нажмите "Подключиться". Если этого
-                не произошло, вставьте ключ в поле и нажмите "Подключиться".
-            </li>
-            <li>Shadowsocks: Скопируйте ключ в буфер обмена. Найдите кнопку импортировать из буфера обмена. (Import from
-                Clipboard).
-            </li>
-        </ul>
-        <p>
-            <br>
-        <h2 class="text-center" id="wireguard">Wireguard <span class="text-danger">(Полностью заблокирован)</span>
-        </h2>
-        <br>
-        Wireguard - надёжный простой протокол с высокой пропускной способностью, и низкой задержкой.
-        Однако факт использования Wireguard легко обнаружить и как следствие - заблокировать.
-        <br>
-        <br>
-        <p>
-            <b>Настройка</b>
-        <p>
-            1. Скачайте и установите на устройство <a class="text-success" href="https://www.wireguard.com/install/"
-                target="_blank">клиент Wireguard</a>
-        <p>
-            2. Получите <code>.conf</code>-файл у annndruha.
-        <p>
-            3. В приложении нажмите профиль/туннель и выберите соответствующий файл.
-        <p>
-            В случае, если приложение пишет что невозможно импортировать туннель, необходимо переименовать .conf-файл,
-            убрав
-            из названия нижние пробелы.
-        <p>
-            (Опционально): Кнопку включения/выключения на телефонах можно удобно добавить в шторку для быстрого доступа.
-            <br>
-            <br>
-        <form class="row justify-content-center g-3">
-            <div class="col-auto">
-                <h4 class="text-center" id="details">Технические детали</h4>
+    <body>
+        <nav id="navbar" class="navbar navbar-light bg-light sticky-top px-3 mb-3" style="margin-bottom: 0">
+            <a class="navbar-brand" href="#">
+                <img src="/icons/vpn.svg" width="40" height="40" alt="" style="padding-right: 1px; padding-bottom: 3px" />
+                annndruha.space</a
+            >
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#general">Главное</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-success" href="#amneziavpn">AmneziaVPN</a>
+                </li>
+            </ul>
+        </nav>
+        <div tabindex="0" class="p-5 rounded-3" style="margin-top: -20px">
+            <h2 class="text-center" id="general">Главное</h2>
+            Вы попали на страницу инструкций по установке и настройке VPN для своих от annndruha. Эта страница не является
+            рекламой и ни к чему не призывает. Чтобы быть в курсе обновлений и проблем с сервером советую подписаться на
+            <a class="text-primary" href="https://t.me/+IRNskhOlrtsyNDIy" target="_blank">мой Telegram-канал</a>. (Только
+            критически важная информация без спама).
+            <br />
+            <br />
+            <div class="alert alert-danger" role="alert">
+                1. Настойчиво прошу всех пользователей отключать VPN, если в нём отсутствует необходимость. Используйте только
+                для сайтов, которые не открываются без VPN.
+                <br />
+                2. Запрещено использовать VPN для скачивания торрентов и другой нелегальной деятельности, иначе Нидерланды
+                могут заблокировать сервер.
+                <br />
+                3. Запрещено рассказывать об этом VPN без согласования с annndruha
             </div>
-            <div class="col-auto">
-                <button id="details_button" class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseData" aria-expanded="false" aria-controls="collapseData">Показать
-                </button>
-            </div>
-        </form>
-        <div class="collapse" id="collapseData" style="margin-bottom: 20px; padding-top: 10px;">
-            <div class="card card-body">
-                Все VPN сервисы находятся на одном виртуальном сервере в Амстердаме (Нидерланды) и
-                используют общие вычислительные мощности.
-                Сервер арендован у провайдера VDS.SH, доступ к серверу имеет только провайдер и я. Однако ни я, ни
-                провайдер
-                не имеют доступа к передаваемым Вами данным (они зашифрованы), только к количеству используемого трафика.
-                Используйте
-                только https соединение, поскольку http может просмотреть любой узел, через который такой трафик проходит.
-                <div id="page_end"></div>
+            <br />
+            <h2 class="text-center" id="amneziavpn">AmneziaVPN</h2>
+            <br />
+            AmneziaVPN - OpenSource приложение от российских разработчиков. Оно поддерживает сразу много протоколов на выбор,
+            почти все имеют обфускацию против блокировок.
+            <p></p>
+            <ul>
+                <li>Протокол AmneziaWG - <span class="text-danger">Не работает на мобильных сетях</span></li>
+                <li>Протокол XRay - <span class="text-success">Работает и на домашних и на мобильных сетях</span></li>
+            </ul>
+            <p></p>
+            <p>
+                <b>Настройка</b>
+            </p>
+
+            <p>1. Скачайте и установите на устройство приложение:</p>
+
+            <ul>
+                <li>
+                    Клиент для
+                    <a
+                        class="text-primary"
+                        href="https://github.com/amnezia-vpn/amnezia-client/releases/download/4.6.0.3/AmneziaVPN_4.6.0.3_x64.exe"
+                        target="_blank"
+                        >Windows</a
+                    >
+                </li>
+                <li>
+                    Клиент для
+                    <a
+                        class="text-primary"
+                        href="https://github.com/amnezia-vpn/amnezia-client/releases/download/4.6.0.3/AmneziaVPN_4.6.0.3.dmg"
+                        target="_blank"
+                        >macOS</a
+                    >
+                </li>
+                <li>
+                    Клиент для
+                    <a
+                        class="text-primary"
+                        href="https://github.com/amnezia-vpn/amnezia-client/releases/download/4.6.0.3/AmneziaVPN_Linux_4.6.0.3.tar.zip"
+                        target="_blank"
+                        >Linux</a
+                    >
+                </li>
+                <li>
+                    Клиент для
+                    <a
+                        class="text-primary"
+                        href="https://play.google.com/store/apps/details?id=org.amnezia.vpn"
+                        target="_blank"
+                        >Android</a
+                    >
+                </li>
+                <li>
+                    Клиент для
+                    <a class="text-primary" href="https://apps.apple.com/us/app/amneziavpn/id1600529900" target="_blank"
+                        >iOS</a
+                    >
+                </li>
+            </ul>
+            <p>2. Получите ключ доступа или файл с ключом доступа annndruha, а затем сохраните его на нужное устройство.</p>
+
+            <p>3. Откройте приложение AmneziaVPN</p>
+
+            <ul>
+                <li>Нажмите "+", затем "Добавить новое соединение". Выберите либо файл-ключ.</li>
+                <li>
+                    Если Вам нужен VPN только для пары приложений, то
+                    <span class="text-danger">ПОЖАЛУЙСТА, включите "Раздельное VPN-туннелирование"</span> и разрешите только
+                    определённым приложениям подключаться через VPN. Это снизит нагрузку на сервер и позволит Вам не отключать
+                    VPN.
+                </li>
+            </ul>
+            <p>
+                <br />
+            </p>
+            <form class="row justify-content-center g-3">
+                <div class="col-auto">
+                    <h4 class="text-center" id="details">Технические детали</h4>
+                </div>
+                <div class="col-auto">
+                    <button
+                        id="details_button"
+                        class="btn btn-outline-success"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseData"
+                        aria-expanded="false"
+                        aria-controls="collapseData"
+                    >
+                        Показать
+                    </button>
+                </div>
+            </form>
+            <div class="collapse" id="collapseData" style="margin-bottom: 20px; padding-top: 10px">
+                <div class="card card-body">
+                    Все VPN сервисы находятся на одном виртуальном сервере в Амстердаме (Нидерланды) и используют общие
+                    вычислительные мощности. Сервер арендован у провайдера VDS.SH, доступ к серверу имеет только провайдер и
+                    я. Однако ни я, ни провайдер не имеют доступа к передаваемым Вами данным (они зашифрованы), только к
+                    количеству используемого трафика. Используйте только https соединение, поскольку http может просмотреть
+                    любой узел, через который такой трафик проходит.
+                    <div id="page_end"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script>
-        let divId;
-        $('.nav-link').click(function () {
-            divId = $(this).attr('href');
-            $('html, body').animate({
-                scrollTop: $(divId).offset().top - $("#navbar").height() - 20
-            }, 100);
-        });
-    </script>
-    <script>
-        let tech_block_showing = false
-        $('#details_button').on('click', function (e) {
-            e.stopPropagation()
-            tech_block_showing = !tech_block_showing
-            if (tech_block_showing) {
-                this.innerHTML = 'Скрыть'
-            } else {
-                this.innerHTML = 'Показать'
-            }
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            let divId
+            $('.nav-link').click(function () {
+                divId = $(this).attr('href')
+                $('html, body').animate(
+                    {
+                        scrollTop: $(divId).offset().top - $('#navbar').height() - 20,
+                    },
+                    100
+                )
+            })
+        </script>
+        <script>
+            let tech_block_showing = false
+            $('#details_button').on('click', function (e) {
+                e.stopPropagation()
+                tech_block_showing = !tech_block_showing
+                if (tech_block_showing) {
+                    this.innerHTML = 'Скрыть'
+                } else {
+                    this.innerHTML = 'Показать'
+                }
 
-            $('html,body').animate({ scrollTop: document.body.scrollHeight }, 340);
-            console.log(tech_block_showing)
-        })
-    </script>
-</body>
-
+                $('html,body').animate({ scrollTop: document.body.scrollHeight }, 340)
+                console.log(tech_block_showing)
+            })
+        </script>
+    </body>
 </html>
